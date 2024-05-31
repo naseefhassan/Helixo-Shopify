@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "edb242554b66543874dbad76a2125f2b"
+name = "helixo-supply"
+handle = "helixo-supply"
+application_url = "https://julie-xl-toshiba-bras.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "helixostore.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://julie-xl-toshiba-bras.trycloudflare.com/auth/callback",
+  "https://julie-xl-toshiba-bras.trycloudflare.com/auth/shopify/callback",
+  "https://julie-xl-toshiba-bras.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
