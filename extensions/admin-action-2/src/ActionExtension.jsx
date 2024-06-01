@@ -7,6 +7,7 @@ import {
   Button,
   Text,
 } from '@shopify/ui-extensions-react/admin';
+import TrustBadge from './TrustBadge';
 
 // The target used here must match the target used in the extension's toml file (./shopify.extension.toml)
 const TARGET = 'admin.product-details.action.render';
@@ -73,6 +74,7 @@ function App() {
         <Text fontWeight="bold">{i18n.translate('welcome', {TARGET})}</Text>
         <Text>Current product: {productTitle}</Text>
       </BlockStack>
+      <TrustBadge/>
     </AdminAction>
   );
 }
